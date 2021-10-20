@@ -222,4 +222,18 @@ int main(int argc, char *argv[])
 	test_video_close(&dev);
 	return 0;
 }
+/*
+output:
+test_video_open
+video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-3).
+video_set_format:
+video_set_format:VIDIOC_S_FMT
+Video format set: width: 640 height: 480 buffer size: 1228800
+video_set_framerate
+Setting frame rate to: 1/30
+video_set_framerate:VIDIOC_S_PARAM
+Frame rate set: 1/30
+test_video_close
+*/
 

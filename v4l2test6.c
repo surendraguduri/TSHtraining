@@ -636,3 +636,96 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+/*
+output:
+test_video_open
+test_video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-3).
+video_set_format:
+video_set_format:VIDIOC_S_FMT
+Video format set: width: 640 height: 480 buffer size: 1228800
+Video format: MJPG (47504a4d) 640x480
+video_set_framerate
+Setting frame rate to: 1/30
+video_set_framerate:VIDIOC_S_PARAM
+Frame rate set: 1/30
+video_prepare_capture
+video_alloc_buffers:VIDIOC_REQBUFS
+10 buffers requested.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 0
+Buffer 0 mapped at address 0x7fc2cd778000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 1228800
+Buffer 1 mapped at address 0x7fc2cd64c000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 2457600
+Buffer 2 mapped at address 0x7fc2cd520000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 3686400
+Buffer 3 mapped at address 0x7fc2cd3f4000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 4915200
+Buffer 4 mapped at address 0x7fc2cd2c8000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 6144000
+Buffer 5 mapped at address 0x7fc2cd19c000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 7372800
+Buffer 6 mapped at address 0x7fc2cd070000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 8601600
+Buffer 7 mapped at address 0x7fc2ccf44000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 9830400
+Buffer 8 mapped at address 0x7fc2cce18000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 11059200
+Buffer 9 mapped at address 0x7fc2cccec000.
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture
+video_enable:enable ? VIDIOC_STREAMON : VIDIOC_STREAMOFF
+video_do_capture:VIDIOC_DQBUF
+0 (0) [-] 0 54826 bytes 5945.512658 1634733151.244264
+video_do_capture:VIDIOC_DQBUF
+1 (1) [-] 1 54710 bytes 5945.583056 1634733151.327746
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+2 (2) [-] 2 55004 bytes 5945.666525 1634733151.397984
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+3 (3) [-] 3 54812 bytes 5945.736772 1634733151.472197
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+4 (4) [-] 4 54836 bytes 5945.811020 1634733151.539675
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+5 (5) [-] 5 54662 bytes 5945.878502 1634733151.603162
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+6 (6) [-] 6 54240 bytes 5945.940811 1634733151.672768
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+7 (7) [-] 7 53844 bytes 5946.011542 1634733151.740853
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+8 (8) [-] 8 53614 bytes 5946.079622 1634733151.806380
+video_queue_buffer:VIDIOC_QBUF
+video_do_capture:VIDIOC_DQBUF
+9 (9) [-] 9 53148 bytes 5946.145014 1634733151.869890
+video_queue_buffer:VIDIOC_QBUF
+video_enable:enable ? VIDIOC_STREAMON : VIDIOC_STREAMOFF
+Captured 9 frames in 0.625910 seconds (14.379064 fps, 868648.847278 B/s).
+video_free_buffers:VIDIOC_REQBUFS
+10 buffers released.
+test_video_close
+*/

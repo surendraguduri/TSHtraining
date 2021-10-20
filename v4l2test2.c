@@ -132,4 +132,11 @@ int main(int argc, char *argv[])
 		test_video_close(&dev);
 	return 0;
 }
+/*
+output:
+test_video_open
+video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-3).
+test_video_close
+*/
 

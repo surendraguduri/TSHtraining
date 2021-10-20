@@ -431,4 +431,61 @@ int main(int argc, char *argv[])
 	test_video_close(&dev);
 	return 0;
 }
+/*
+output:
+test_video_open
+test_video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-3).
+video_set_format:
+video_set_format:VIDIOC_S_FMT
+Video format set: width: 640 height: 480 buffer size: 1228800
+video_set_framerate
+Setting frame rate to: 1/30
+video_set_framerate:VIDIOC_S_PARAM
+Frame rate set: 1/30
+video_prepare_capture
+video_alloc_buffers:VIDIOC_REQBUFS
+10 buffers requested.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 0
+Buffer 0 mapped at address 0x7f9ef2c47000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 1228800
+Buffer 1 mapped at address 0x7f9ef2b1b000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 2457600
+Buffer 2 mapped at address 0x7f9ef29ef000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 3686400
+Buffer 3 mapped at address 0x7f9ef28c3000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 4915200
+Buffer 4 mapped at address 0x7f9ef2797000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 6144000
+Buffer 5 mapped at address 0x7f9ef266b000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 7372800
+Buffer 6 mapped at address 0x7f9ef253f000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 8601600
+Buffer 7 mapped at address 0x7f9ef2413000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 9830400
+Buffer 8 mapped at address 0x7f9ef22e7000.
+video_alloc_buffers:VIDIOC_QUERYBUF
+length: 1228800 offset: 11059200
+Buffer 9 mapped at address 0x7f9ef21bb000.
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+video_queue_buffer:VIDIOC_QBUF
+test_video_close
+*/
 

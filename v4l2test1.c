@@ -92,3 +92,8 @@ int main(int argc,char *argv[])
 
 	return 0;
 }
+/*
+output:
+test_video_open
+test_video_close
+*/
