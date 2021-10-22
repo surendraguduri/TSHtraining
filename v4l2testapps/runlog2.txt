@@ -1,0 +1,8 @@
+
+test_video_open
+video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-2).
+test_video_close
+
+
+[  275.765219] video0: VIDIOC_QUERYCAP: driver=uvcvideo, card=VirtualBox Webcam - HP TrueVisi, bus=usb-0000:00:06.0-2, version=0x00050b16, capabilities=0x84a00001, device_caps=0x04200001

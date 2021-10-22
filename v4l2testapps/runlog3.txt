@@ -1,0 +1,17 @@
+
+test_video_open
+video_open:VIDIOC_QERYCAP
+Device /dev/video0 opened: VirtualBox Webcam - HP TrueVisi (usb-0000:00:06.0-2).
+video_set_format:
+video_set_format:VIDIOC_S_FMT
+Video format set: width: 640 height: 480 buffer size: 1228800
+video_set_framerate
+Setting frame rate to: 1/30
+video_set_framerate:VIDIOC_S_PARAM
+Frame rate set: 1/30
+test_video_close
+
+
+[  313.649784] video0: VIDIOC_QUERYCAP: driver=uvcvideo, card=VirtualBox Webcam - HP TrueVisi, bus=usb-0000:00:06.0-2, version=0x00050b16, capabilities=0x84a00001, device_caps=0x04200001
+[  313.686713] video0: VIDIOC_S_FMT: type=vid-cap, width=640, height=480, pixelformat=MJPG, field=none, bytesperline=0, sizeimage=1228800, colorspace=8, flags=0x0, ycbcr_enc=1, quantization=0, xfer_func=1
+[  313.721244] video0: VIDIOC_S_PARM: type=vid-cap, capability=0x0, capturemode=0x0, timeperframe=1/30, extendedmode=0, readbuffers=0
